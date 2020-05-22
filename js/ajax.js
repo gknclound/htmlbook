@@ -13,7 +13,7 @@ $.ajax({
 			let t=html[i].name
 			let s=html[i].img
 			let n=html[i].list.length
-			let o='<li class="mui-table-view-cell mui-media"><a class="mui-navigate-right"><img class="mui-media-object mui-pull-left" src="'+s+'"><div class="mui-media-body">'+t+'</div><span class="mui-badge mui-badge-warning">'+n+'</span></a></li>'
+			let o='<li class="mui-table-view-cell mui-media"><a class="mui-navigate-right"><img class="mui-media-object mui-pull-left" src="'+s+'"><div class="mui-media-body">'+t+'<p class="mui-ellipsis">html</p></div><span class="mui-badge mui-badge-warning">'+n+'</span></a></li>'
 			$('#tabbar1').append(o)
 		}
     },
