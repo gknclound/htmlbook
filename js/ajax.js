@@ -11,8 +11,8 @@ $.ajax({
 		var html=obj.html
 		for(var i=0;i<html.length;i++){
 			let t=html[i].name
-//			let s=html[i].img
-			let o='<li class="mui-table-view-cell mui-media"><a class="mui-navigate-right"><img class="mui-media-object mui-pull-left" src=""><div class="mui-media-body">CBD<p class="mui-ellipsis">'+t+'</p></div></a></li>'
+			let s=html[i].img
+			let o='<li class="mui-table-view-cell mui-media"><a class="mui-navigate-right"><img class="mui-media-object mui-pull-left" src="'+s+'"><div class="mui-media-body">'+t+'<p class="mui-ellipsis">'+t+'</p></div></a></li>'
 			$('#tabbar1').append(o)
 		}
     },
