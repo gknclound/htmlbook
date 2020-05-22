@@ -12,7 +12,8 @@ $.ajax({
 		for(var i=0;i<html.length;i++){
 			let t=html[i].name
 			let s=html[i].img
-			let o='<li class="mui-table-view-cell mui-media"><a class="mui-navigate-right"><img class="mui-media-object mui-pull-left" src="'+s+'"><div class="mui-media-body">'+t+'<p class="mui-ellipsis">'+t+'</p></div></a></li>'
+			let n=html[i].list.length
+			let o='<li class="mui-table-view-cell mui-media"><a class="mui-navigate-right"><img class="mui-media-object mui-pull-left" src="'+s+'"><div class="mui-media-body">'+t+'<p class="mui-ellipsis">'+t+'</p></div><span class="mui-badge mui-badge-warning">'+n+'</span></a></li>'
 			$('#tabbar1').append(o)
 		}
     },
